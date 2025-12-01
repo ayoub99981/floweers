@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>هدية باقة ورد — مولاتي خديجة</title>
+
+  <!-- Google Font (يدعم العربية) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#FFF8F9;
+      --card:#ffffff;
+      --accent:#d95a8a;
+      --muted:#9b9b9b;
+      --rose:#ff6f91;
+      --leaf:#3aa76d;
+      --shadow: 0 8px 30px rgba(15,15,15,0.08);
+      --glass: rgba(255,255,255,0.6);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0; font-family:'Cairo', system-ui, -apple-system, "Helvetica Neue", Arial; background:linear-gradient(180deg,#fff 0%,var(--bg) 100%); color:#222}
+
+    .wrap{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:30px;
+      gap:28px;
+      flex-direction:column;
+    }
+
+    .card{
+      width:min(980px,94%);
+      background:var(--card);
+      border-radius:20px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      display:flex;
+      gap:0;
+      align-items:stretch;
+      direction:rtl;
+    }
+
+    /* Left: bouquet area */
+    .left{
+      flex:1 1 420px;
+      padding:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg, rgba(255,255,255,0.6), rgba(250,240,245,0.6));
+      position:relative;
+    }
+
+    /* Right: message area */
+    .right{
+      width:420px;
+      padding:36px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      justify-content:center;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.95));
+    }
+
+    h1{
+      margin:0;
+      font-size:20px;
+      font-weight:700;
+      color:var(--accent);
+      letter-spacing:0.4px;
+    }
+
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .message{
+      margin-top:6px;
+      font-size:22px;
+      line-height:1.45;
+      font-weight:600;
+      text-align:right;
+      color:#333;
+      background:linear-gradient(90deg, rgba(255,255,255,0.0), rgba(255,255,255,0.02));
+      padding:18px;
+      border-radius:12px;
+      border:1px solid rgba(0,0,0,0.03);
+      box-shadow: 0 6px 18px rgba(73,38,69,0.03);
+    }
+
+    .from{
+      margin-top:8px;
+      font-size:15px;
+      color:var(--muted);
+      text-align:left;
+    }
+
+    .actions{
+      display:flex;
+      gap:10px;
+      margin-top:6px;
+      justify-content:flex-start;
+    }
+
+    .btn{
+      background:var(--accent);
+      color:white;
+      border:none;
+      padding:10px 14px;
+      border-radius:10px;
+      cursor:pointer;
+      font-weight:600;
+      box-shadow: 0 6px 18px rgba(217,90,138,0.18);
+      transition:transform .18s ease, box-shadow .18s;
+    }
+    .btn:active{ transform:translateY(2px) scale(.997) }
+    .btn.ghost{
+      background:transparent;
+      color:var(--accent);
+      border:1px solid rgba(217,90,138,0.12);
+      box-shadow:none;
+    }
+
+    /* bouquet SVG container */
+    .bouquet{
+      width:360px;
+      max-width:86%;
+      display:block;
+      transform-origin:center;
+      animation:float 6s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{ transform: translateY(0) rotate(-1deg) }
+      50%{ transform: translateY(-10px) rotate(1deg) }
+      100%{ transform: translateY(0) rotate(-1deg) }
+    }
+
+    /* small footer */
+    .foot{
+      font-size:12px;
+      color:var(--muted);
+      text-align:center;
+      margin-top:12px;
+    }
+
+    /* responsive */
+    @media (max-width:880px){
+      .card{flex-direction:column-reverse}
+      .right{width:100%}
+      .left{padding:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="region" aria-label="هدية باقة ورد لمولاتي خديجة">
+      <div class="left" aria-hidden="false">
+        <!-- SVG باقة ورد بسيطة ومزخرفة -->
+        <svg class="bouquet" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#ff7aa3"/>
+              <stop offset="1" stop-color="#ff5a8f"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" x2="1">
+              <stop offset="0" stop-color="#67d6a8"/>
+              <stop offset="1" stop-color="#3aa76d"/>
+            </linearGradient>
+            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity="0.12"/>
+            </filter>
+          </defs>
+
+          <!-- bouquet wrapper -->
+          <g transform="translate(300,310)">
+
+            <!-- wrapping paper -->
+            <g filter="url(#shadow)">
+              <path d="M-140,80 L0,260 L140,80 Q40,20 0,40 Q-40,20 -140,80 Z" fill="#fdeef3"/>
+              <path d="M-120,70 L0,230 L120,70 Q40,10 0,30 Q-40,10 -120,70 Z" fill="url(#g1)" opacity="0.12"/>
+              <path d="M-90,80 L0,220 L90,80 Q30,30 0,45 Q-30,30 -90,80 Z" fill="#fff" opacity="0.7"/>
+            </g>
+
+            <!-- stems -->
+            <g transform="translate(0,40)">
+              <rect x="-6" y="20" width="12" height="220" rx="6" fill="url(#g2)" transform="rotate(-6) translate(-20,0)" />
+              <rect x="-6" y="20" width="12" height="240" rx="6" fill="#2e8b56" transform="rotate(8) translate(20,0)" />
+              <rect x="-6" y="20" width="10" height="210" rx="6" fill="#2c6b44" transform="rotate(0) translate(0,0)" />
+            </g>
+
+            <!-- roses (simple circles + petals) -->
+            <g transform="translate(0,-80)">
+              <!-- left rose -->
+              <g transform="translate(-70,-20) scale(.9)">
+                <circle r="34" cx="0" cy="0" fill="url(#g1)"/>
+                <g fill="#fff" opacity="0.12" transform="translate(-6,-6)"><circle r="12"/><circle cx="10" cy="-6" r="10"/><circle cx="12" cy="8" r="8"/></g>
+              </g>
+
+              <!-- center rose -->
+              <g transform="translate(0,-10)">
+                <circle r="46" cx="0" cy="0" fill="url(#g1)"/>
+                <g fill="#fff" opacity="0.14" transform="translate(-6,-6)"><circle r="16"/><circle cx="14" cy="-8" r="12"/><circle cx="10" cy="14" r="10"/></g>
+              </g>
+
+              <!-- right rose -->
+              <g transform="translate(70,-24) scale(.95)">
+                <circle r="36" cx="0" cy="0" fill="url(#g1)"/>
+                <g fill="#fff" opacity="0.12" transform="translate(-6,-6)"><circle r="12"/><circle cx="12" cy="-6" r="10"/><circle cx="10" cy="12" r="9"/></g>
+              </g>
+
+              <!-- small buds -->
+              <g transform="translate(-120,10) scale(.6)">
+                <circle r="18" fill="#ff9bb8"/>
+              </g>
+              <g transform="translate(120,6) scale(.65)">
+                <circle r="16" fill="#ff8fb0"/>
+              </g>
+
+              <!-- leaves -->
+              <g fill="#3aa76d" opacity="0.95">
+                <ellipse rx="34" ry="18" transform="translate(-140,40) rotate(-28)"/>
+                <ellipse rx="34" ry="18" transform="translate(140,38) rotate(28)"/>
+                <ellipse rx="26" ry="12" transform="translate(-80,56) rotate(-22)"/>
+                <ellipse rx="26" ry="12" transform="translate(80,56) rotate(22)"/>
+              </g>
+            </g>
+
+            <!-- ribbon -->
+            <g transform="translate(0,150)">
+              <path d="M-90,10 Q-40,40 0,24 Q40,8 90,30 L90,50 Q40,20 0,36 Q-40,52 -90,10 Z" fill="#ff4f80"/>
+              <rect x="-92" y="22" width="184" height="12" rx="6" fill="#fff" opacity="0.08"/>
+            </g>
+
+          </g>
+        </svg>
+      </div>
+
+      <div class="right">
+        <h1>هدية بدون  مناسبة</h1>
+        <p class="subtitle">haaaaa ana mn3tkch werd ? ikun khir </p>
+
+        <div class="message" id="cardMessage" lang="ar">
+          أنا وليالي 2025 نعتذر منك يا مولاتي خديجة
+        </div>
+
+        <div class="from">مع كل التقدير والمحبة — مُقدم لك بإخلاص</div>
+
+        <div class="actions" role="group" aria-label="أزرار">
+          <button class="btn" id="downloadBtn" title="تحميل كصورة (PNG)">knbghik</button>
+          <button class="btn ghost" id="printBtn" title="طباعة البطاقة">meawwwww</button>
+        </div>
+
+        <div class="foot">b9y meaya dimaaaa 3afaaaaaaaaaaaaaaaaaaaaak</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // بسيط: دعم طباعة
+    document.getElementById('printBtn').addEventListener('click', function(){
+      window.print();
+    });
+
+    // تنزيل الكارت كصورة PNG بدون مكتبات خارجية:
+    // سنرسم البطاقة في كانفاس باستخدام SVG-to-canvas بطريقة بسيطة.
+    // ملاحظة: هذه طريقة تقريبية — تعمل في معظم المتصفحات الحديثة.
+    document.getElementById('downloadBtn').addEventListener('click', async function(){
+      try {
+        // نجمع عنصر البطاقة
+        const card = document.querySelector('.card');
+        const rect = card.getBoundingClientRect();
+        const scale = 2; // دقة أعلى
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.round(rect.width * scale);
+        canvas.height = Math.round(rect.height * scale);
+        const ctx = canvas.getContext('2d');
+
+        // نرسم خلفية بصرياً
+        ctx.fillStyle = getComputedStyle(document.body).background || '#fff';
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+
+        // نستخدم svgSerializer: سنحول الجزء الأيسر (SVG) إلى صورة ثم نرسمه، ثم نصنع صورة للجزء الأيمن نصيًا.
+        // 1) تحويل الـ SVG إلى صورة
+        const svg = document.querySelector('.bouquet').cloneNode(true);
+        // set width/height attributes for proper rasterization
+        svg.setAttribute('width', Math.round(rect.width/2));
+        svg.setAttribute('height', Math.round(rect.height));
+        const xml = new XMLSerializer().serializeToString(svg);
+        const svg64 = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(xml);
+        const imgSvg = new Image();
+        imgSvg.crossOrigin = 'anonymous';
+        imgSvg.src = svg64;
+
+        await new Promise((res,rej)=>{ imgSvg.onload = res; imgSvg.onerror = rej; });
+
+        // 2) رسم الخلفية الورقية (محاكاة)
+        // نرسم الورقة البيضاء على يمين البطاقة
+        const padding = 20 * scale;
+        ctx.save();
+        // left area (SVG)
+        const leftW = Math.round(canvas.width * 0.54);
+        ctx.drawImage(imgSvg, Math.round((leftW - imgSvg.width)/2), Math.round((canvas.height - imgSvg.height)/2), imgSvg.width, imgSvg.height);
+        ctx.restore();
+
+        // 3) رسم النص من الجزء الأيمن
+        ctx.save();
+        // أخذ نص البطاقة
+        const messageEl = document.getElementById('cardMessage');
+        // draw a rounded white rectangle for the message background
+        const rightX = Math.round(leftW + 10);
+        const rightW = Math.round(canvas.width - rightX - 18);
+        const r = 22 * scale;
+        ctx.fillStyle = '#ffffff';
+        // rounded rect
+        function roundRect(x,y,w,h,radius){
+          ctx.beginPath();
+          ctx.moveTo(x+radius,y);
+          ctx.arcTo(x+w,y,x+w,y+h,radius);
+          ctx.arcTo(x+w,y+h,x,y+h,radius);
+          ctx.arcTo(x,y+h,x,y,radius);
+          ctx.arcTo(x,y,x+w,y,radius);
+          ctx.closePath();
+          ctx.fill();
+        }
+        roundRect(rightX, 30*scale, rightW, canvas.height - 60*scale, r);
+
+        // draw the Arabic text (aligned right)
+        ctx.fillStyle = '#222';
+        ctx.font = (24*scale) + "px Cairo, sans-serif";
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'top';
+        // split into lines roughly
+        const lines = messageEl.innerText.split('\n');
+        // draw main message (right aligned)
+        const paddingRight = 30 * scale;
+        let y = 58 * scale;
+        const maxW = rightW - 60*scale;
+        // simple wrap: measure and break
+        function drawWrapped(text, x, yStart, maxWidth, lineHeight){
+          const words = text.split(' ');
+          let line = '';
+          let yPos = yStart;
+          for (let n=0;n<words.length;n++){
+            const testLine = line ? (words[n] + ' ' + line) : words[n]; // rtl friendly: reverse order attempt
+            const metrics = ctx.measureText(testLine);
+            if (metrics.width > maxWidth && n>0){
+              ctx.fillText(line, x, yPos);
+              line = words[n];
+              yPos += lineHeight;
+            } else {
+              line = testLine;
+            }
+          }
+          if(line) ctx.fillText(line, x, yPos);
+          return yPos + lineHeight;
+        }
+
+        // For RTL nicer result, reverse words in each line
+        const msg = lines.map(l => l.trim()).join(' ');
+        const rtlWords = msg.split(' ').reverse().join(' ');
+
+        y = drawWrapped(rtlWords, rightX + rightW - paddingRight, y, maxW, 34*scale);
+
+        // small signature
+        ctx.fillStyle = '#666';
+        ctx.font = (14*scale) + "px Cairo, sans-serif";
+        ctx.textAlign = 'left';
+        ctx.fillText("مع كل التقدير والمحبة", rightX + 24*scale, y + 10*scale);
+
+        ctx.restore();
+
+        // أخيراً: تنزيل
+        const data = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = data;
+        a.download = 'bouquet-card-khadija.png';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+
+      } catch(e){
+        alert('حدث خطأ أثناء الإنشاء — الرجاء تجربة المتصفح الحديث (Chrome, Firefox). \n\n' + (e && e.message ? e.message : ''));
+        console.error(e);
+      }
+    });
+  </script>
+</body>
+</html>
